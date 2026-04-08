@@ -1,22 +1,22 @@
-// sw.js - Service Worker para GordisNailsbySandra
+// sw.js - Service Worker para Darly Nails
 
-const CACHE_NAME = 'gordis-nails-v1';
+const CACHE_NAME = 'darlinails-v1';
 const urlsToCache = [
-  '/gordis-nails/',
-  '/gordis-nails/index.html',
-  '/gordis-nails/admin.html',
-  '/gordis-nails/admin-login.html',
-  '/gordis-nails/setup-wizard.html',
-  '/gordis-nails/editar-negocio.html',
-  '/gordis-nails/manifest.json',
-  '/gordis-nails/icons/icon-72x72.png',
-  '/gordis-nails/icons/icon-96x96.png',
-  '/gordis-nails/icons/icon-128x128.png',
-  '/gordis-nails/icons/icon-144x144.png',
-  '/gordis-nails/icons/icon-152x152.png',
-  '/gordis-nails/icons/icon-192x192.png',
-  '/gordis-nails/icons/icon-384x384.png',
-  '/gordis-nails/icons/icon-512x512.png'
+  '/darlinails/',
+  '/darlinails/index.html',
+  '/darlinails/admin.html',
+  '/darlinails/admin-login.html',
+  '/darlinails/setup-wizard.html',
+  '/darlinails/editar-negocio.html',
+  '/darlinails/manifest.json',
+  '/darlinails/icons/icon-72x72.png',
+  '/darlinails/icons/icon-96x96.png',
+  '/darlinails/icons/icon-128x128.png',
+  '/darlinails/icons/icon-144x144.png',
+  '/darlinails/icons/icon-152x152.png',
+  '/darlinails/icons/icon-192x192.png',
+  '/darlinails/icons/icon-384x384.png',
+  '/darlinails/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/gordis-nails/icons/icon-192x192.png');
+            return caches.match('/darlinails/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para GordisNailsbySandra');
+console.log('✅ Service Worker configurado para Darly Nails');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
