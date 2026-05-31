@@ -1,0 +1,12 @@
+{
+  "appId": "com.tusalon.darlynails",
+  "appName": "Darly Nails",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

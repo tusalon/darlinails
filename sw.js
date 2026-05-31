@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Darly Nails
 
-const CACHE_NAME = 'darlinails-v29';
+const CACHE_NAME = 'darlinails-v47';
 const urlsToCache = [
   '/darlinails/',
   '/darlinails/index.html',
@@ -17,7 +17,14 @@ const urlsToCache = [
   '/darlinails/icons/icon-152x152.png',
   '/darlinails/icons/icon-192x192.png',
   '/darlinails/icons/icon-384x384.png',
-  '/darlinails/icons/icon-512x512.png'
+  '/darlinails/icons/icon-512x512.png',
+  '/darlinails/vendor/react.production.min.js',
+  '/darlinails/vendor/react-dom.production.min.js',
+  '/darlinails/vendor/babel.min.js',
+  '/darlinails/vendor/bcrypt.min.js',
+  '/darlinails/vendor/tailwind-browser.js',
+  '/darlinails/vendor/lucide/lucide.css',
+  '/darlinails/vendor/lucide/lucide.woff2'
 ];
 
 // ============================================
