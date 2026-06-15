@@ -1,6 +1,6 @@
 // sw.js - Service Worker para Darly Nails
 
-const CACHE_NAME = 'darlinails-v49';
+const CACHE_NAME = 'darlinails-v56';
 const urlsToCache = [
   '/darlinails/',
   '/darlinails/index.html',
